@@ -27,21 +27,23 @@ h1 {
   align-items: center;
   gap: 2rem;
   height: 100vh;
-  overflow: hidden;
+overflow: hidden;
 }
 
 .board-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   gap: 1.5rem;
 }
 
 span {
   height: 100%;
   width: 100%;
+  min-height: 90px;
+  min-width: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,6 +60,19 @@ span:hover {
 
 .alreadyPlaced:hover {
   background-color: #f92f6142;
+}
+
+.score-container{
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.score-container p > b{
+  font-weight: bold;
+  color: rgb(90, 70, 219);
+  font-size: 1.2rem;
+  margin: 5px;
 }
 
 .play-container {
@@ -157,5 +172,11 @@ footer a:hover {
   .board-container{
     width: 320px;
     height: 320px;
+  }
+
+  span{
+    height: 100%;
+    min-height: 90px;
+    width: 100%;
   }
 }
