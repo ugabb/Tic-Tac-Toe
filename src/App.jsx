@@ -39,10 +39,11 @@ function App() {
     if (value === 0) {
       newBoard[currentIndex] = 1;
       setBoard(newBoard);
+      computerMove(newBoard);
     }
 
     // if board option is empty or not a X
-    setTimeout(computerMove(newBoard), 3000);
+    //setTimeout(computerMove(newBoard), 3000);
   }
 
   function computerMove(board) {
